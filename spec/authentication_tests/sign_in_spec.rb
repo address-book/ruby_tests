@@ -2,10 +2,9 @@ RSpec.describe "Authentication" do
   let(:driver) { @driver }
 
   it 'logs in user' do
-    driver.navigate.to 'http://a.testaddressbook.com/sign-in'
+    driver.navigate.to 'http://a.testaddressbook.com/sign_in'
 
-    user = User.new(email: 'user@example.com',
-                    password: 'password')
+    user = User.valid
 
     driver.find_element(id: 'session_email').send_keys user.email
     driver.find_element(id: 'session_password').send_keys user.password
