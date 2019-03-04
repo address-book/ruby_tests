@@ -7,10 +7,13 @@ RSpec.describe 'Element Actions Exercise' do
     password = "password"
 
     # Enter email value using above email variable
+    @driver.find_element(:id, "session_email").send_keys email
 
     # Enter password value using above password variable
+    @driver.find_element(:id, "session_password").send_keys password
 
     # Click Sign In Button
+    @driver.find_element(:name, "commit").click
 
 
 
