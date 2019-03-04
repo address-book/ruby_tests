@@ -21,7 +21,6 @@ RSpec.configure do |config|
 
   config.before do
     @driver = Selenium::WebDriver.for :chrome
-    @driver.manage.timeouts.implicit_wait = 5
   end
 
   config.after do

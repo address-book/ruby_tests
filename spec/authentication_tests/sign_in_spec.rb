@@ -1,8 +1,6 @@
 RSpec.describe "Authentication" do
   let(:driver) { @driver }
 
-  before { @driver.manage.timeouts.implicit_wait = 0 }
-
   it 'logs in user' do
     user = User.valid
 

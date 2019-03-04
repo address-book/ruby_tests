@@ -18,9 +18,11 @@ module RubyTests
     end
 
     def sign_in(user)
-      @driver.find_element(SESSION_EMAIL).send_keys user.email
-      @driver.find_element(SESSION_PASSWORD).send_keys user.password
-      @driver.find_element(SUBMIT_BUTTON).click
+      Selenium::WebDriver::Wait.new.until { driver.find_element(SESSION_EMAIL) }
+
+      driver.find_element(SESSION_EMAIL).send_keys user.email
+      driver.find_element(SESSION_PASSWORD).send_keys user.password
+      driver.find_element(SUBMIT_BUTTON).click
     end
 
     def success?
