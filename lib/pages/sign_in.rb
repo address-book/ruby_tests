@@ -8,7 +8,8 @@ module RubyTests
     SUCCESS = {css: "span[data-test='current-user']"}
 
     def self.visit(driver)
-      driver.get "http://a.testaddressbook.com/sign_in"
+      Home.visit(driver).follow_signin
+
       new(driver)
     end
 
