@@ -1,5 +1,9 @@
 require "ruby_tests"
 require "selenium-webdriver"
+require "webdrivers"
+require "rspec"
+
+include RubyTests
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
