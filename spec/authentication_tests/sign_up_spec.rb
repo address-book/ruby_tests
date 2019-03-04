@@ -7,7 +7,7 @@ RSpec.describe "Authentication" do
   it 'signs up user' do
     driver.navigate.to 'http://a.testaddressbook.com/sign_up'
 
-    user = User.random
+    user = User.new
 
     driver.find_element(id: 'user_email').send_keys user.email
     driver.find_element(id: 'user_password').send_keys user.password
