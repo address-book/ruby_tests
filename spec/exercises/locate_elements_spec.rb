@@ -3,11 +3,11 @@ RSpec.describe 'Element Location Exercise' do
 
   it 'locates email field' do
 
-    id = ""
-    name = ""
-    class_name = ""
-    tag_name = ""
-    tag_index = 0
+    id = "session_email"
+    name = "session[email]"
+    class_name = "form-control"
+    tag_name = "input"
+    tag_index = 2
 
 
     # Obfuscated way of getting the Email Field
