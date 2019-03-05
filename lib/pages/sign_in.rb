@@ -1,7 +1,5 @@
 module RubyTests
-  class SignIn
-    attr_reader :driver
-
+  class SignIn < Base
     SESSION_EMAIL = {id: 'session_email'}
     SESSION_PASSWORD = {id: 'session_password'}
     SUBMIT_BUTTON = {css: "input[data-test='submit']"}
@@ -11,10 +9,6 @@ module RubyTests
       Home.visit(driver).follow_signin
 
       new(driver)
-    end
-
-    def initialize(driver)
-      @driver = driver
     end
 
     def sign_in(user)
