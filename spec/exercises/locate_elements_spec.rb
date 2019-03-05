@@ -27,10 +27,10 @@ RSpec.describe 'Element Location Exercise' do
 
   it 'locates sign in button' do
 
-    name = ""
-    class_name = ""
-    tag_name = ""
-    tag_index = 0
+    name = "commit"
+    class_name = "btn"
+    tag_name = "input"
+    tag_index = 4
 
 
     # Obfuscated way of getting the Email Field
@@ -48,10 +48,10 @@ RSpec.describe 'Element Location Exercise' do
 
   it 'locates sign up link' do
 
-    link_text = ""
-    partial_link_text = ""
-    tag_name = ""
-    tag_index = 0
+    link_text = "Sign up"
+    partial_link_text = "up"
+    tag_name = "a"
+    tag_index = 2
 
 
     # Obfuscated way of getting the Email Field

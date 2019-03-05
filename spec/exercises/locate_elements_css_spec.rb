@@ -3,11 +3,11 @@ RSpec.describe 'Element Location With CSS Exercise' do
 
   it 'locates email field' do
 
-    id = ""
-    name = ""
-    class_name = ""
-    tag_name = ""
-    tag_index = 0
+    id = "#session_email"
+    name = "[name='session[email]']"
+    class_name = ".form-control"
+    tag_name = "input"
+    tag_index = 2
 
 
     # Obfuscated way of getting the Email Field
@@ -27,10 +27,10 @@ RSpec.describe 'Element Location With CSS Exercise' do
 
   it 'locates sign in button' do
 
-    name = ""
-    class_name = ""
-    tag_name = ""
-    tag_index = 0
+    name = "[name='commit']"
+    class_name = ".btn"
+    tag_name = "input"
+    tag_index = 4
 
 
     # Obfuscated way of getting the Sign In Button
@@ -48,7 +48,7 @@ RSpec.describe 'Element Location With CSS Exercise' do
 
   it 'locates sign up link' do
 
-    data_tag = ""
+    data_tag = "[data-test='sign-up']"
 
     # Obfuscated way of getting the Sign Up Link
     sign_up_link = @driver.find_elements(:xpath, "//*")[36]
